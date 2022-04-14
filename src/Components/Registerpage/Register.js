@@ -21,7 +21,7 @@ const Register = () => {
         onSubmit: async (values) => {
               //  alert(JSON.stringify(values, null, 2));
            try {
-            await axios.post('http://localhost:8001/register',values)
+            await axios.post('https://url-project-backend.herokuapp.com/register',values)
             nagivate('/')
            } catch (error) {
                console.log(error);

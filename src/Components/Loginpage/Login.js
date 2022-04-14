@@ -15,7 +15,7 @@ const Main = () => {
     },
     onSubmit: async (values) => {
     try {
-      let logindata = await axios.post("http://localhost:8001/login",values)
+      let logindata = await axios.post("https://url-project-backend.herokuapp.com/login",values)
        window.localStorage.setItem('mytoken',logindata.data.token)
      
        navigate("/main")

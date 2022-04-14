@@ -19,7 +19,7 @@ const Main = () => {
     },
     onSubmit:async (values)  => {
     console.log(values)
-    var response  =  await axios.post("http://localhost:8001/url",values).then((res) => { return res.data})
+    var response  =  await axios.post("https://url-project-backend.herokuapp.com/url",values).then((res) => { return res.data})
     console.log(response)
     navigate("/firstpage")
     },

@@ -15,7 +15,7 @@ const Passwordforgot = () => {
           },
           onSubmit: async (values) => {
           try {
-            await axios.put("http://localhost:8001/register",values)
+            await axios.put("https://url-project-backend.herokuapp.com/register",values)
             navigate ('/login')
           } catch (error) {
               console.log(error)
